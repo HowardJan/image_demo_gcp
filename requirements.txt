@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+jinja2
+openai
+google-cloud-storage
+python-multipart
+
+pytest
+pytest-mock

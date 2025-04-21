@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>圖片分析器</title></head>
+<body>
+  <h2>上傳圖片分析內容</h2>
+  <form action="/" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept="image/*" required />
+    <button type="submit">上傳並分析</button>
+  </form>
+
+  {% if result %}
+    <h3>分析結果：</h3>
+    <p>{{ result }}</p>
+  {% endif %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: image-analyzer
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/YOUR_PROJECT_ID/image-analyzer
+          env:
+            - name: OPENAI_API_KEY
+              value: "你的_OpenAI_Key"
+            - name: BUCKET_NAME
+              value: "你的_GCS_Bucket名稱"
